@@ -153,8 +153,7 @@ nav {
   gap: 8px;
   transition: all 0.3s ease;
 }
-.btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:hover {
   background-color: var(--btn-text-dark);
   color: var(--btn-bg-dark);
   outline-offset: 4px;
@@ -174,8 +173,7 @@ nav {
   gap: 8px;
   transition: all 0.3s ease;
 }
-.btn-outline:hover,
-.btn-outline:focus {
+.btn-outline:hover {
   background-color: var(--btn-border-dark);
   color: var(--btn-text-dark);
   outline-offset: 4px;
@@ -214,8 +212,7 @@ svg.arrow {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
-.hero-images-row img:hover,
-.hero-images-row img:focus {
+.hero-images-row img:hover {
   transform: scale(1.1);
   outline-offset: 2px;
   outline: 2px solid var(--btn-bg-dark);
@@ -235,8 +232,7 @@ svg.arrow {
   margin-left: 50%;
   transition: border-color 0.3s ease;
 }
-.show-more-container:hover,
-.show-more-container:focus {
+.show-more-container:hover {
   border-color: var(--btn-bg-dark);
 }
 .show-more-container svg {
@@ -339,8 +335,7 @@ section.trending h3 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
   transition: transform 0.3s ease;
 }
-.product-card img:hover,
-.product-card:focus-within img {
+.product-card img:hover {
   transform: scale(1.05);
   outline-offset: 4px;
   outline: 2px solid var(--btn-bg-dark);
@@ -433,7 +428,7 @@ section.info-section img {
   background-color: var(--btn-bg-dark);
   color: var(--btn-text-dark);
   border: none;
-  padding: .8em 2.2em;
+  padding: 0.8em 2.2em;
   font-weight: 300;
   font-size: 1rem;
   border-radius: 28px;
@@ -443,10 +438,58 @@ section.info-section img {
   gap: 8px;
   transition: all 0.3s ease;
 }
-.info-button button:hover,
-.info-button button:focus {
+.info-button button:hover {
   background-color: var(--btn-text-dark);
   color: var(--btn-bg-dark);
   outline-offset: 4px;
   outline: 2px solid var(--btn-bg-dark);
+}
+
+/* Tradition section */
+section.tradition {
+  max-width: 100%;
+  margin: 4rem;
+  text-align: center;
+  padding-bottom: 6rem;
+}
+section.tradition h2 {
+  font-weight: 600;
+  font-size: 2.7rem;
+  line-height: 1.15;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.tradition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px 20px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tradition-grid img {
+  border-radius: 8px;
+  user-select: none;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+.tradition-grid img:hover {
+  transform: scale(1.05);
+  outline-offset: 4px;
+  outline: 2px solid var(--btn-bg-dark);
+  cursor: pointer;
+}
+
+.tradition-paragraph {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: var(--grey-dark);
+  line-height: 1.5;
+  margin-top: 3rem;
 }
