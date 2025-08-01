@@ -100,7 +100,6 @@ nav {
   gap: 2.8rem;
   font-weight: 500;
   font-size: 1rem;
-  user-select: none;
 }
 
 /* Hero Section */
@@ -125,14 +124,12 @@ nav {
   font-size: 7.5rem;
   margin: 0;
   line-height: 1.1;
-  user-select: none;
 }
 
 .hero-text h2 {
   font-weight: 300;
   font-size: 3.7rem;
   margin: 0 0 2em 2px;
-  user-select: none;
 }
 
 .hero-buttons {
@@ -155,7 +152,6 @@ nav {
   align-items: center;
   gap: 8px;
   transition: all 0.3s ease;
-  user-select: none;
 }
 .btn-primary:hover,
 .btn-primary:focus {
@@ -177,7 +173,6 @@ nav {
   align-items: center;
   gap: 8px;
   transition: all 0.3s ease;
-  user-select: none;
 }
 .btn-outline:hover,
 .btn-outline:focus {
@@ -204,14 +199,12 @@ svg.arrow {
   color: var(--grey-dark);
   font-size: 0.9rem;
   max-width: 270px;
-  user-select: none;
 }
 
 .hero-images-row {
   display: flex;
   gap: 16px;
   margin-bottom: 10px;
-  user-select: none;
 }
 .hero-images-row img {
   width: 100px;
@@ -240,7 +233,6 @@ svg.arrow {
   border-bottom: 1.5px solid transparent;
   width: 105px;
   margin-left: 50%;
-  user-select: none;
   transition: border-color 0.3s ease;
 }
 .show-more-container:hover,
@@ -271,7 +263,6 @@ svg.arrow {
   width: 100%;
   height: 100%;
   vertical-align: middle;
-  user-select: none;
 }
 
 .hero-image .circle {
@@ -329,7 +320,6 @@ section.trending h3 {
   font-size: 1.9rem;
   text-align: center;
   margin-bottom: 3rem;
-  user-select: none;
 }
 .product-grid {
   display: grid;
@@ -347,7 +337,6 @@ section.trending h3 {
 }
 .product-card img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-  user-select: none;
   transition: transform 0.3s ease;
 }
 .product-card img:hover,
@@ -360,13 +349,11 @@ section.trending h3 {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--black);
-  user-select: none;
 }
 .product-card .price {
   font-size: 0.85rem;
   font-weight: 400;
   color: var(--grey-dark);
-  user-select: none;
 }
 .trending-view-more {
   display: flex;
@@ -385,12 +372,81 @@ section.trending h3 {
   align-items: center;
   gap: 8px;
   transition: all 0.3s ease;
-  user-select: none;
 }
-.trending-view-more button:hover,
-.trending-view-more button:focus {
+.trending-view-more button:hover {
   background-color: var(--btn-border-dark);
   color: var(--btn-text-dark);
   outline-offset: 4px;
   outline: 2px solid var(--btn-border-dark);
+}
+
+/* Info section */
+section.info-section {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 52px;
+  align-items: center;
+  max-width: 100%;
+  margin: 6rem 1.5rem;
+  height: 100%;
+}
+section.info-section img {
+  border-radius: 12px;
+  box-shadow: 0 0 26px rgb(0 0 0 / 0.1);
+}
+.info-text {
+  font-weight: 300;
+  color: var(--grey-dark);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  max-width: 460px;
+  text-align: end;
+}
+.info-text strong {
+  font-weight: 600;
+  color: var(--black);
+}
+.stats {
+  margin-top: 2.2rem;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.stat span {
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: var(--grey-dark);
+  margin-top: 5px;
+}
+.info-button {
+  margin-top: 3rem;
+}
+.info-button button {
+  background-color: var(--btn-bg-dark);
+  color: var(--btn-text-dark);
+  border: none;
+  padding: .8em 2.2em;
+  font-weight: 300;
+  font-size: 1rem;
+  border-radius: 28px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+.info-button button:hover,
+.info-button button:focus {
+  background-color: var(--btn-text-dark);
+  color: var(--btn-bg-dark);
+  outline-offset: 4px;
+  outline: 2px solid var(--btn-bg-dark);
 }
