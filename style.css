@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+:root {
+  --black: #000000;
+  --grey-dark: #232323;
+  --grey-light: #757575;
+  --bg-light: #fdf4ef;
+  --bg-white: #ffffff;
+  --btn-bg-dark: #1c1c1c;
+  --btn-bg-light: transparent;
+  --btn-border-dark: #1c1c1c;
+  --btn-text-dark: #ffffff;
+  --btn-text-dark-hover: #000000;
+  --btn-text-light: #1c1c1c;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-white);
+  color: var(--black);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header & nav  */
+
+header {
+    padding: 25px 40px;
+    position: fixed;
+    height: 80px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.8rem;
+    font-weight: 500;
+    font-size: 1rem;
+    user-select: none;
+}
