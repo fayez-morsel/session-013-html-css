@@ -379,18 +379,19 @@ section.trending h3 {
 /* Info section */
 section.info-section {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
   gap: 52px;
   align-items: center;
   max-width: 100%;
-  margin: 6rem 1.5rem;
+  margin: 6rem 2rem;
   height: 100%;
 }
 section.info-section img {
-  border-radius: 12px;
   box-shadow: 0 0 26px rgb(0 0 0 / 0.1);
 }
 .info-text {
+  justify-self: end;
   font-weight: 300;
   color: var(--grey-dark);
   font-size: 0.9rem;
